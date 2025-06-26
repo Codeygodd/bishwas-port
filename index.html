@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishwas Pandey | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233b82f6'/><text x='50' y='65' font-family='Arial, sans-serif' font-size='60' font-weight='bold' text-anchor='middle' fill='white'>B</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="description" content="Full-stack developer passionate about creating innovative web solutions. Specializing in React, Node.js, and modern web technologies.">
+    <meta name="keywords" content="Bishwas Pandey, Full Stack Developer, React, Node.js, Web Development, Portfolio, Nepal">
+    <meta name="author" content="Bishwas Pandey">
+    <meta name="theme-color" content="#3b82f6">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Bishwas Pandey">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-logo">
+                    <span>B</span>
+                </div>
+                <span class="brand-text">Bishwas</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Desktop Actions -->
+            <div class="nav-actions">
+                <button id="resume-download-btn" class="resume-btn">
+                    <i class="fas fa-download"></i>
+                    <span>Resume</span>
+                </button>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <div class="mobile-brand">
+                        <div class="brand-logo">
+                            <span>B</span>
+                        </div>
+                        <span class="brand-text">Bishwas Pandey</span>
+                    </div>
+                    <button class="mobile-close" id="mobile-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="mobile-nav-links">
+                    <a href="#home" class="mobile-nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="#about" class="mobile-nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="#skills" class="mobile-nav-link">
+                        <i class="fas fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                    <a href="#services" class="mobile-nav-link">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Services</span>
+                    </a>
+                    <a href="#projects" class="mobile-nav-link">
+                        <i class="fas fa-folder"></i>
+                        <span>Projects</span>
+                    </a>
+                    <a href="#experience" class="mobile-nav-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Experience</span>
+                    </a>
+                    <a href="#contact" class="mobile-nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+
+                <div class="mobile-menu-footer">
+                    <div class="mobile-social-links">
+                        <a href="https://github.com/Codeygodd" target="_blank" class="mobile-social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank" class="mobile-social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:pandeybiswas1@gmail.com" class="mobile-social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <button id="mobile-resume-btn" class="mobile-resume-btn">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Bishwas Pandey</span>
+                    </h1>
+                    <div class="hero-subtitle-container">
+                        <span class="hero-subtitle" id="typed-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Passionate full-stack developer from Nepal, specializing in creating innovative web applications that solve real-world problems. From eco-friendly platforms to job hunting solutions, I build digital experiences that make a difference.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="https://github.com/Codeygodd" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:pandeybiswas1@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <div class="hero-image">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/photo-jakadkqFqF2HPfRYY9QY8DwwXwT0eE.png" alt="Bishwas Pandey">
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-element" data-speed="0.5">💻</div>
+                            <div class="floating-element" data-speed="0.3">🚀</div>
+                            <div class="floating-element" data-speed="0.7">⚡</div>
+                            <div class="floating-element" data-speed="0.4">🎯</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    About <span class="gradient-text">Me</span>
+                </h2>
+                <p class="section-subtitle">
+                    Passionate developer with a love for creating innovative solutions
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>My Journey</h3>
+                    <div class="about-description">
+                        <p>I'm a dedicated full-stack developer currently studying at the National School of Sciences in Nepal. My passion lies in creating innovative web solutions that address real-world challenges and improve people's lives.</p>
+                        <p>With expertise in modern web technologies and a keen eye for user experience, I've successfully developed platforms like <strong>GreenStayFinder</strong> for eco-tourism and <strong>JobHunt</strong> for career opportunities.</p>
+                        <p>I believe in writing clean, efficient code and creating intuitive user interfaces that not only look great but also provide exceptional functionality and performance.</p>
+                    </div>
+
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                            <i class="fas fa-award"></i>
+                            <div class="achievement-value">5-Star Rating</div>
+                            <div class="achievement-label">Upwork & Fiverr</div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-users"></i>
+                            <div class="achievement-value">25+</div>
+                            <div class="achievement-label">Happy Clients</div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-code"></i>
+                            <div class="achievement-value">50+</div>
+                            <div class="achievement-label">Projects Completed</div>
+                        </div>
+                        <div class="achievement-item">
+                            <i class="fas fa-globe"></i>
+                            <div class="achievement-value">10+</div>
+                            <div class="achievement-label">Countries Served</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-highlights">
+                    <h3>What I Bring</h3>
+                    <div class="highlights-list">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Clean Code</h4>
+                                <p>Writing maintainable, scalable, and efficient code following best practices.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>UI/UX Design</h4>
+                                <p>Creating beautiful, intuitive interfaces that provide excellent user experiences.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Full-Stack</h4>
+                                <p>Expertise in both frontend and backend development with modern technologies.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Web Performance</h4>
+                                <p>Optimizing applications for speed, accessibility, and search engine visibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-section">
+                <div class="education-grid">
+                    <div class="education-card">
+                        <h4>Education</h4>
+                        <div class="education-item">
+                            <h5>National School of Sciences</h5>
+                            <p>Computer Science • 2022 - 2025</p>
+                        </div>
+                        <div class="education-item">
+                            <h5>Little Step Academy</h5>
+                            <p>Foundation Education • 2011 - 2022</p>
+                        </div>
+                    </div>
+                    <div class="certifications-card">
+                        <h4>Certifications</h4>
+                        <div class="cert-list">
+                            <div class="cert-item">
+                                <div class="cert-dot"></div>
+                                <span>HTML, CSS, JavaScript for Web Developers</span>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-dot"></div>
+                                <span>Hardware Fellowship Training</span>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-dot"></div>
+                                <span>Full-Stack Development Bootcamp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Technical <span class="gradient-text">Skills</span>
+                </h2>
+                <p class="section-subtitle">
+                    Expertise across the full development stack with modern technologies
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category" data-category="frontend">
+                    <div class="category-header">
+                        <div class="category-icon">F</div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-level="95">
+                            <span class="skill-icon">⚛️</span>
+                            <span class="skill-name">React</span>
+                            <span class="skill-level">95%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="90">
+                            <span class="skill-icon">▲</span>
+                            <span class="skill-name">Next.js</span>
+                            <span class="skill-level">90%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="88">
+                            <span class="skill-icon">📘</span>
+                            <span class="skill-name">TypeScript</span>
+                            <span class="skill-level">88%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="92">
+                            <span class="skill-icon">🎨</span>
+                            <span class="skill-name">Tailwind CSS</span>
+                            <span class="skill-level">92%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="95">
+                            <span class="skill-icon">🟨</span>
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level">95%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="98">
+                            <span class="skill-icon">🌐</span>
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-level">98%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="95">
+                            <span class="skill-icon">🎭</span>
+                            <span class="skill-name">CSS3</span>
+                            <span class="skill-level">95%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <span class="skill-icon">💚</span>
+                            <span class="skill-name">Vue.js</span>
+                            <span class="skill-level">80%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-category="backend">
+                    <div class="category-header">
+                        <div class="category-icon">B</div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-level="90">
+                            <span class="skill-icon">🟢</span>
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-level">90%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <span class="skill-icon">🐘</span>
+                            <span class="skill-name">PHP</span>
+                            <span class="skill-level">85%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="82">
+                            <span class="skill-icon">🐍</span>
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">82%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="78">
+                            <span class="skill-icon">☕</span>
+                            <span class="skill-name">Java</span>
+                            <span class="skill-level">78%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <span class="skill-icon">⚡</span>
+                            <span class="skill-name">C++</span>
+                            <span class="skill-level">75%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="88">
+                            <span class="skill-icon">🚀</span>
+                            <span class="skill-name">Express.js</span>
+                            <span class="skill-level">88%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="92">
+                            <span class="skill-icon">🔗</span>
+                            <span class="skill-name">REST APIs</span>
+                            <span class="skill-level">92%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <span class="skill-icon">📊</span>
+                            <span class="skill-name">GraphQL</span>
+                            <span class="skill-level">75%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-category="database">
+                    <div class="category-header">
+                        <div class="category-icon">D</div>
+                        <h3>Database & Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item" data-level="88">
+                            <span class="skill-icon">🍃</span>
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-level">88%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="90">
+                            <span class="skill-icon">🐬</span>
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-level">90%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="82">
+                            <span class="skill-icon">🐘</span>
+                            <span class="skill-name">PostgreSQL</span>
+                            <span class="skill-level">82%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="95">
+                            <span class="skill-icon">📝</span>
+                            <span class="skill-name">Git</span>
+                            <span class="skill-level">95%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="78">
+                            <span class="skill-icon">🐳</span>
+                            <span class="skill-name">Docker</span>
+                            <span class="skill-level">78%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <span class="skill-icon">☁️</span>
+                            <span class="skill-name">AWS</span>
+                            <span class="skill-level">75%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="92">
+                            <span class="skill-icon">▲</span>
+                            <span class="skill-name">Vercel</span>
+                            <span class="skill-level">92%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <span class="skill-icon">📰</span>
+                            <span class="skill-name">WordPress</span>
+                            <span class="skill-level">85%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="additional-skills">
+                <h3>Additional Expertise</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">SEO Optimization</span>
+                    <span class="skill-tag">Performance Tuning</span>
+                    <span class="skill-tag">Testing</span>
+                    <span class="skill-tag">Agile Development</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">API Integration</span>
+                    <span class="skill-tag">DevOps</span>
+                    <span class="skill-tag">Mobile Development</span>
+                    <span class="skill-tag">E-commerce</span>
+                    <span class="skill-tag">CMS Development</span>
+                    <span class="skill-tag">Security</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    My <span class="gradient-text">Services</span>
+                </h2>
+                <p class="section-subtitle">
+                    Comprehensive web development solutions tailored to your business needs
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Full-Stack Development</h3>
+                    <p>End-to-end web application development using cutting-edge technologies and industry best practices.</p>
+                    <ul class="service-features">
+                        <li>Custom Web Applications</li>
+                        <li>API Development & Integration</li>
+                        <li>Database Design & Management</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>TypeScript</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Web Design</h3>
+                    <p>Creating beautiful, mobile-first websites that deliver exceptional user experiences across all devices.</p>
+                    <ul class="service-features">
+                        <li>Mobile-First Design</li>
+                        <li>Cross-Browser Compatibility</li>
+                        <li>SEO Optimization</li>
+                        <li>Fast Loading Speed</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Tailwind</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-commerce Solutions</h3>
+                    <p>Building robust online stores and booking platforms with secure payment processing and inventory management.</p>
+                    <ul class="service-features">
+                        <li>Online Store Development</li>
+                        <li>Payment Gateway Integration</li>
+                        <li>Inventory Management</li>
+                        <li>Admin Dashboard</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span>Next.js</span>
+                        <span>Stripe</span>
+                        <span>PayPal</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Applications</h3>
+                    <p>Developing scalable web applications that solve real-world problems with intuitive user interfaces.</p>
+                    <ul class="service-features">
+                        <li>SPA Development</li>
+                        <li>Progressive Web Apps</li>
+                        <li>Real-time Features</li>
+                        <li>Cloud Integration</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span>React</span>
+                        <span>Vue.js</span>
+                        <span>WebSocket</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Creating robust server-side solutions with secure APIs, efficient databases, and scalable architecture.</p>
+                    <ul class="service-features">
+                        <li>RESTful APIs</li>
+                        <li>Database Design</li>
+                        <li>Authentication Systems</li>
+                        <li>Server Optimization</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span>Node.js</span>
+                        <span>PHP</span>
+                        <span>Python</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Website Maintenance</h3>
+                    <p>Ongoing support and maintenance to keep your website secure, updated, and performing at its best.</p>
+                    <ul class="service-features">
+                        <li>Regular Updates</li>
+                        <li>Security Monitoring</li>
+                        <li>Bug Fixes</li>
+                        <li>Performance Monitoring</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span>WordPress</span>
+                        <span>Git</span>
+                        <span>Monitoring Tools</span>
+                        <span>Security</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-cta">
+                <h3>Ready to Start Your Project?</h3>
+                <p>Let's discuss how I can help bring your ideas to life with modern web technologies and exceptional user experiences.</p>
+                <a href="#contact" class="cta-button">
+                    <i class="fas fa-bolt"></i>
+                    Get Started Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Featured <span class="gradient-text">Projects</span>
+                </h2>
+                <p class="section-subtitle">
+                    A showcase of my recent work and the impact they've made
+                </p>
+            </div>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web-app">Web Apps</button>
+                <button class="filter-btn" data-filter="e-commerce">E-commerce</button>
+                <button class="filter-btn" data-filter="website">Websites</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="web-app">
+                    <div class="project-image">
+                        <img src="https://sjc.microlink.io/iuNI6z5vIP5iWktTvG4It5lvyePLiVx8M_QtF7xx6zXekbO_8z4VokFusLXyN6SVfpRYq46E8-qkNcBxyZ5-8w.jpeg" alt="GreenStayFinder">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://v0-greenstayfinder-website.vercel.app/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-eye"></i> 2.5K</span>
+                                <span><i class="fas fa-star"></i> 45</span>
+                                <span><i class="fas fa-users"></i> 150+</span>
+                            </div>
+                        </div>
+                        <div class="project-badge">Featured Project</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>GreenStayFinder</h3>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <p>A comprehensive eco-friendly hotel and cottage booking platform for Nepal, featuring beautiful mountain landscapes and sustainable tourism options.</p>
+                        <div class="project-features">
+                            <div class="feature-item">Hotel Search & Booking</div>
+                            <div class="feature-item">Responsive Design</div>
+                            <div class="feature-item">Location-based Search</div>
+                            <div class="feature-item">User Authentication</div>
+                        </div>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://v0-greenstayfinder-website.vercel.app/" target="_blank" class="btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" target="_blank" class="btn-secondary">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web-app">
+                    <div class="project-image">
+                        <img src="https://sjc.microlink.io/p_omUwOrR9YJYftcK7vKR1_Rv-aP7VPNirIxuW2ygpSC5RiaProWzGg_8Bxu4wBwtnvWDrOnssCBOssnb_9Z7g.jpeg" alt="JobHunt">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://hunt-mejob.vercel.app/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-eye"></i> 3.2K</span>
+                                <span><i class="fas fa-star"></i> 62</span>
+                                <span><i class="fas fa-users"></i> 200+</span>
+                            </div>
+                        </div>
+                        <div class="project-badge">Featured Project</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>JobHunt</h3>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <p>A modern job search and application platform that helps users find their dream jobs. Features a clean, intuitive interface with advanced search capabilities.</p>
+                        <div class="project-features">
+                            <div class="feature-item">Job Search & Filtering</div>
+                            <div class="feature-item">Application Tracking</div>
+                            <div class="feature-item">User Profiles</div>
+                            <div class="feature-item">Company Listings</div>
+                        </div>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://hunt-mejob.vercel.app/" target="_blank" class="btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" target="_blank" class="btn-secondary">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="e-commerce">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-eye"></i> 1.8K</span>
+                                <span><i class="fas fa-star"></i> 38</span>
+                                <span><i class="fas fa-users"></i> 80+</span>
+                            </div>
+                        </div>
+                        <div class="project-badge">Web Application</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>E-commerce Platform</h3>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <p>Full-featured online store with payment integration, inventory management, and comprehensive admin dashboard for complete e-commerce solution.</p>
+                        <div class="project-features">
+                            <div class="feature-item">Payment Processing</div>
+                            <div class="feature-item">Inventory Management</div>
+                            <div class="feature-item">Order Tracking</div>
+                            <div class="feature-item">Admin Dashboard</div>
+                        </div>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>Stripe</span>
+                            <span>PostgreSQL</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" target="_blank" class="btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" target="_blank" class="btn-secondary">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web-app">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop" alt="Task Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="project-stats">
+                                <span><i class="fas fa-eye"></i> 1.5K</span>
+                                <span><i class="fas fa-star"></i> 29</span>
+                                <span><i class="fas fa-users"></i> 60+</span>
+                            </div>
+                        </div>
+                        <div class="project-badge">SaaS Platform</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Task Management System</h3>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <p>Collaborative project management tool with real-time updates, team collaboration features, and comprehensive project tracking capabilities.</p>
+                        <div class="project-features">
+                            <div class="feature-item">Real-time Collaboration</div>
+                            <div class="feature-item">Project Tracking</div>
+                            <div class="feature-item">Team Management</div>
+                            <div class="feature-item">File Sharing</div>
+                        </div>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Socket.io</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" target="_blank" class="btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" target="_blank" class="btn-secondary">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <p>Want to see more of my work? Check out my GitHub for additional projects and contributions.</p>
+                <a href="https://github.com/Codeygodd" target="_blank" class="github-btn">
+                    <i class="fab fa-github"></i>
+                    View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Experience & <span class="gradient-text">Education</span>
+                </h2>
+                <p class="section-subtitle">
+                    My journey in web development and continuous learning
+                </p>
+            </div>
+
+            <div class="experience-content">
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">💼</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Freelance Full-Stack Developer</h3>
+                                <span class="timeline-period">Nov 2022 - Present</span>
+                            </div>
+                            <div class="timeline-company">Upwork & Fiverr • Remote</div>
+                            <p>Working with international clients to deliver high-quality web applications and maintaining a 5-star rating across platforms.</p>
+                            <div class="timeline-achievements">
+                                <h4>Key Achievements:</h4>
+                                <ul>
+                                    <li>Completed 50+ projects with 100% client satisfaction</li>
+                                    <li>Maintained 5-star rating on both Upwork and Fiverr</li>
+                                    <li>Specialized in React, Node.js, and modern web technologies</li>
+                                    <li>Built long-term relationships with 25+ recurring clients</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">🎓</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Student Developer</h3>
+                                <span class="timeline-period">2022 - 2025</span>
+                            </div>
+                            <div class="timeline-company">National School of Sciences • Kathmandu, Nepal</div>
+                            <p>Currently pursuing studies while actively working on real-world projects and expanding technical expertise in modern web development.</p>
+                            <div class="timeline-achievements">
+                                <h4>Key Achievements:</h4>
+                                <ul>
+                                    <li>Developed GreenStayFinder - eco-tourism platform</li>
+                                    <li>Created JobHunt - job search application</li>
+                                    <li>Participated in coding competitions and hackathons</li>
+                                    <li>Mentored junior students in web development</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-tech">
+                                <span>JavaScript</span>
+                                <span>Python</span>
+                                <span>Java</span>
+                                <span>C++</span>
+                                <span>Web Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">🎓</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Foundation Education</h3>
+                                <span class="timeline-period">2011 - 2022</span>
+                            </div>
+                            <div class="timeline-company">Little Step Academy • Kathmandu, Nepal</div>
+                            <p>Completed foundational education with strong focus on mathematics and science, laying groundwork for programming journey.</p>
+                            <div class="timeline-achievements">
+                                <h4>Key Achievements:</h4>
+                                <ul>
+                                    <li>Excellent performance in mathematics and science</li>
+                                    <li>Developed logical thinking and problem-solving skills</li>
+                                    <li>Participated in science fairs and competitions</li>
+                                    <li>Built strong foundation for technical education</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-tech">
+                                <span>Mathematics</span>
+                                <span>Science</span>
+                                <span>Logic</span>
+                                <span>Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-sidebar">
+                    <div class="certifications-section">
+                        <div class="sidebar-header">
+                            <i class="fas fa-award"></i>
+                            <h3>Certifications</h3>
+                        </div>
+                        <div class="cert-list">
+                            <div class="cert-item">
+                                <span class="cert-icon">🏆</span>
+                                <div class="cert-content">
+                                    <h4>CodeCraft: School Coding Challenge - 1st Position</h4>
+                                    <p>National School of Sciences</p>
+                                    <div class="cert-meta">
+                                        <span>2025</span>
+                                        <span class="cert-status">Certificate of Award</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">🤖</span>
+                                <div class="cert-content">
+                                    <h4>7 Days Robotics Training</h4>
+                                    <p>National School of Sciences & Engineers Vlogs</p>
+                                    <div class="cert-meta">
+                                        <span>2025</span>
+                                        <span class="cert-status">Certificate of Participation</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">🌱</span>
+                                <div class="cert-content">
+                                    <h4>APEX EcoSprint 2025</h4>
+                                    <p>APEX Health Education and Awareness Team</p>
+                                    <div class="cert-meta">
+                                        <span>2025</span>
+                                        <span class="cert-status">Certificate of Participation</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">💻</span>
+                                <div class="cert-content">
+                                    <h4>Full-Stack Development Bootcamp</h4>
+                                    <p>Online Learning Platform</p>
+                                    <div class="cert-meta">
+                                        <span>2022</span>
+                                        <span class="cert-status">Professional Certificate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-summary">
+                        <h3>Skills Summary</h3>
+                        <div class="skill-progress-item">
+                            <div class="skill-progress-header">
+                                <span>Frontend Development</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-progress-header">
+                                <span>Backend Development</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-progress-header">
+                                <span>Database Management</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="skill-progress-header">
+                                <span>UI/UX Design</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-download">
+                        <button id="sidebar-resume-btn" class="download-btn">
+                            <i class="fas fa-download"></i>
+                            Download Full Resume
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Let's Work <span class="gradient-text">Together</span>
+                </h2>
+                <p class="section-subtitle">
+                    Ready to bring your ideas to life? Let's discuss your next project and create something amazing together.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Get in Touch</h3>
+                        <p>I'm always excited to work on new projects and collaborate with amazing people. Whether you have a project in mind or just want to chat about technology, feel free to reach out!</p>
+                    </div>
+
+                    <div class="contact-methods">
+                        <a href="mailto:pandeybiswas1@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>pandeybiswas1@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:+9779767550939" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+977 9767550939</p>
+                            </div>
+                        </a>
+
+                        <a href="https://maps.google.com/?q=Lazimpaat,Kathmandu,Nepal" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Lazimpaat, Kathmandu, Nepal</p>
+                            </div>
+                        </a>
+
+                        <a href="https://pande.vercel.app" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Website</h4>
+                                <p>pande.vercel.app</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="availability-status">
+                        <div class="status-indicator">
+                            <div class="status-dot"></div>
+                            <h4>Available for Projects</h4>
+                        </div>
+                        <div class="status-details">
+                            <div class="status-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Response time: Usually within 24 hours</span>
+                            </div>
+                            <div class="status-item">
+                                <i class="fas fa-comment"></i>
+                                <span>Open to both short-term and long-term projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-connect">
+                        <h4>Connect with me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/Codeygodd" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/feed/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:pandeybiswas1@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Send me a message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-background"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="brand-logo">
+                            <span>B</span>
+                        </div>
+                        <span class="brand-text">Bishwas Pandey</span>
+                    </div>
+                    <p>Full-stack developer passionate about creating innovative web solutions that make a difference. Based in Nepal, working globally.</p>
+                    <div class="footer-love">
+                        <span>Made with</span>
+                        <i class="fas fa-heart"></i>
+                        <span>in Nepal</span>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#services">Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Projects</h3>
+                        <ul>
+                            <li><a href="#projects">Portfolio</a></li>
+                            <li><a href="https://v0-greenstayfinder-website.vercel.app/" target="_blank">GreenStayFinder</a></li>
+                            <li><a href="https://hunt-mejob.vercel.app/" target="_blank">JobHunt</a></li>
+                            <li><a href="https://github.com/Codeygodd" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#contact">Get in Touch</a></li>
+                            <li><a href="mailto:pandeybiswas1@gmail.com">Email</a></li>
+                            <li><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+                            <li><button id="footer-resume-btn" class="footer-resume-link">Resume</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <span>&copy; 2024 Bishwas Pandey. All rights reserved.</span>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
