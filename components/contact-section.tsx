@@ -118,7 +118,7 @@ export default function ContactSection() {
 
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com/bishwaspandey"
+                  href="https://github.com/Codeygodd"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
@@ -126,7 +126,7 @@ export default function ContactSection() {
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/bishwaspandey"
+                  href="https://www.linkedin.com/in/bishwas-pandey-5ab822316/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
@@ -134,7 +134,7 @@ export default function ContactSection() {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://instagram.com/bishwaspandey"
+                  href="https://www.instagram.com/biswashthegr8/?__pwa=1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
