@@ -17,10 +17,10 @@ const experiences = [
 
 const achievements = [
   {
-    title: "1st Position - CodeCraft: School Coding Challenge",
+    title: "2nd Position - CodeCraft: School Coding Challenge",
     organization: "National School of Sciences",
     date: "February 2025",
-    description: "Secured first position in the school coding challenge organized by Department of Computer Science",
+    description: "Secured second position in the school coding challenge organized by Department of Computer Science",
   },
   {
     title: "7 Days Robotics Training Certificate",
