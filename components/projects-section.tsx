@@ -42,7 +42,7 @@ const projects = [
     title: "Wrouple - Crypto Trading",
     description:
       "Cryptocurrency trading platform with real-time market data, portfolio tracking, and secure transaction management.",
-    url: "#",
+    url: "https://cryptohunt-beta.vercel.app/",
     image: "/images/wrouple-crypto.png",
     tags: ["React", "TypeScript", "Web3"],
   },
